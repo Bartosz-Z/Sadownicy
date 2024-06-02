@@ -1,0 +1,200 @@
+body{
+	background-color:black;
+	font-family: 'Cousine', monospace;
+	font-size:15px;
+}
+
+#asdf {
+	/*background-color:#505050;
+	opacity:0.5;*/background-color:black;
+	color:white;
+	width: 1200px;
+	/*border: 3px solid black;*/
+}
+
+#buttons {
+	/*background-color:#505050;
+	opacity:0.5;*/
+	background-color:black;
+	width:1200px;
+}
+
+#scoreboard{
+	/*background-color:#505050;
+	opacity:0.5;*/background-color:black;
+	width:1200px;
+	color:white;
+}
+
+.thebutton{
+	background-color:black;
+	border: 2px solid white;
+	color:white;
+	width:200px;
+	text-align:center;
+	height:50px;
+	font-size:20px;
+	font-family: 'Cousine', monospace;
+	opacity:0.7;
+}
+
+#button_multi, #button_editor{
+	background-color:black;
+	border: 2px solid white;
+	color:white;
+	width:1000px;
+	text-align:center;
+	height:50px;
+	font-size:20px;
+	font-family: 'Cousine', monospace;
+	opacity:0.7;
+}
+
+.thebutton:hover{
+	cursor:pointer;
+	opacity:1;
+}
+
+#SR{
+	min-width:20px;
+}
+
+#EI{
+	min-width:20px;
+}
+
+tr {
+	vertical-align: top;
+}
+
+th {
+	padding: 20px;
+}
+
+.title {
+	font-size:25px;
+	letter-spacing:5px;
+	/*border-bottom: 2px solid black;*/
+}
+
+td {
+	padding: 10px;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+.half {
+	width: 50%;
+}
+
+.abc{
+	/*border-right:2px solid black;*/
+}
+
+input {
+	text-align: right;
+}
+
+#fog_of_war{
+	display: block;
+	cursor: pointer;
+}
+
+#flashLightMode{
+	display: block;
+	cursor: pointer;
+}
+
+input[type=number]{
+	border:2px solid white;
+	opacity:0.7;
+	background-color:black;
+	color:white;
+	width:175px;
+}
+
+input[type=number]:focus{
+	opacity:1;
+}
+
+input[type=range]{
+	opacity:0.7;
+	background-color:black;
+	color:white;
+	height:20px;
+	width:175px;
+	-webkit-appearance:none;
+	appearance:none;
+	outline:none;
+	border:2px solid white;
+}
+
+input[type=range]:focus{
+	opacity:1;
+}
+
+.slider::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	appearance:none;
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	background:white;
+}
+
+.slider::-moz-range-thumb{
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	background:white;
+}
+
+#tileset{
+	background-color:black;
+	color:white;
+	border:2px solid white;
+	opacity:0.7;
+}
+
+#tileset:focus{
+	opacity:1;
+}
+
+input[type=checkbox]{
+	opacity:0.7;
+	background-color:black;
+	color:white;
+}
+
+input[type=checkbox]:hover{
+	opacity:1;
+}
+
+input[type=checkbox]:checked{
+	opacity:1;
+}
+
+.editor-maps {
+	border-collapse: collapse; 
+	background-color:black;
+	width:1200px;
+}
+
+.editor-map-row {
+	border: 2px solid white;
+}
+
+.editor-map-row td {
+	color: white;
+	font-size:20px;
+	font-family: 'Cousine', monospace;
+	vertical-align: middle;
+}
+
+.editor-map-row  td:nth-child(even) {text-align: right;}

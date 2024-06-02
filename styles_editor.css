@@ -1,0 +1,116 @@
+﻿body {
+	font-family: 'Cousine', monospace;
+}
+
+.dropdown {
+	width: 250px;
+	height: 50px;
+	position: relative;
+	display: inline-block;
+	top: 0px;
+	transition: top 1s ease;
+}
+
+.dropbtn {
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color: #ffffff;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	font-family: 'Cousine', monospace;
+	border: none;
+	border-radius: 0 0 20px 20px; 
+	cursor: pointer;
+	transition: background-color 1s ease;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: rgba(255,255,255,0.9);
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: rgba(128,128,128,0.7);
+  overflow: auto;
+  bottom: 50px;
+  width: 100%;
+  border-collapse: collapse;
+  z-index: 1;
+}
+
+.dropdown-content tr {
+	height: 60px;
+}
+
+.dropdown-content td {
+	color: white;
+	padding: 5px 16px;
+	text-decoration: none;
+}
+
+.dropdown-content td:nth-child(even) {text-align: right;}
+
+.dropdown tr:hover {background-color: #ddd;}
+
+.icon-button {
+	height: 40px;
+	width: 40px;
+	border: 2px solid black;
+}
+
+.UI-bottom-left {
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	width: 50%;
+}
+
+.button-small {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 16px;
+	font-size: 16px;
+	font-family: 'Cousine', monospace;
+	border: none;
+	border-radius: 20px;
+	background-color: #ffffff;
+	transition: background-color 0.5s ease;
+}
+
+.button-back {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 16px;
+	font-size: 16px;
+	font-family: 'Cousine', monospace;
+	border: none;
+	border-radius: 20px 0 0 0; 
+	background-color: #ffffff;
+	transition: background-color 0.5s ease;
+}
+
+.button-back:hover, .button-small:hover {
+	background-color: #aaaaaa;
+}
+
+.insert-info {
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+	padding: 8px;
+	font-size: 16px;
+	font-family: 'Cousine', monospace;
+	border: none;
+	border-radius: 20px;
+	background-color: #ffffff;
+}
+
+.insert-table {
+	width: 100%;
+}
+
+form {
+	display: inline-block;
+	vertical-align: middle;
+}

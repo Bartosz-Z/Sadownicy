@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/633b7d957c.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles_editor.css">
+	</head>
+
+	<body id="game">
+		<canvas id="myCanvas" style='position:absolute; left:0px; top:0px;' ontouchstart="myFunction(event)" ontouchmove="myFunction2(event)" ontouchend="endt()" onmousedown="start_continuous_click(event)" onmousemove="insert_element(event)" onmouseup="stop_continuous_click()">
+			Your browser does not support the canvas element.
+		</canvas>
+		
+		<center>
+			<div class="dropdown" onmouseover="dropdown_hover_in(this)" onmouseout="dropdown_hover_out(this)">
+			  <div class="dropbtn"><i class="fas fa-angle-double-down"></i> Terrain <i class="fas fa-angle-double-down"></i></div>
+			  <table id="myDropdown" class="dropdown-content">
+				<tr>
+					<td>Grass:</td>
+					<td><button id="icon-button-grass" class="icon-button" onclick="set_insert_object('grass')"></button></td>
+				</tr>
+				<tr>
+					<td>Wall:</td>
+					<td><button id="icon-button-wall" class="icon-button" onclick="set_insert_object('wall')"></button></td>
+				</tr>
+				<tr>
+					<td>Edge:</td>
+					<td><button id="icon-button-edge" class="icon-button" onclick="set_insert_object('edge')"></button></td>
+				</tr>
+			  </table>
+			</div>
+			
+			<div class="dropdown" onmouseover="dropdown_hover_in(this)" onmouseout="dropdown_hover_out(this)">
+			  <div class="dropbtn"><i class="fas fa-angle-double-down"></i> Characters <i class="fas fa-angle-double-down"></i></div>
+			  <table id="myDropdown" class="dropdown-content">
+				<tr>
+					<td>Player:</td>
+					<td><button id="icon-button-player" class="icon-button" onclick="set_insert_object('player')"></button></td>
+				</tr>
+				<tr>
+					<td>Enemy:</td>
+					<td><button id="icon-button-enemy" class="icon-button" onclick="set_insert_object('enemy')"></button></td>
+				</tr>
+			  </table>
+			</div>
+			
+			<div class="dropdown" onmouseover="dropdown_hover_in(this)" onmouseout="dropdown_hover_out(this)">
+			  <div class="dropbtn"><i class="fas fa-angle-double-down"></i> Items <i class="fas fa-angle-double-down"></i></div>
+			  <table id="myDropdown" class="dropdown-content">
+				<tr>
+					<td>Point:</td>
+					<td><button id="icon-button-point" class="icon-button" onclick="set_insert_object('point')"></button></td>
+				</tr>
+			  </table>
+			</div>
+		</center>
+
+		<div class="UI-bottom-left">
+			<div class="insert-info">
+				<table class="insert-table">
+					<tr>
+						<td>Current insert element:</td>
+						<td><button id="icon-insert-element" class="icon-button" onclick="set_insert_object_none()"></button></td>
+					</tr>
+				</table>
+			</div>
+			
+			<button class="button-small" onclick="clear_map()">Clear map</button>
+			<form action="map_save.php" method="post" onsubmit="map_save()">
+				<input type="submit" class="button-small" value="Save map" />
+				<input type="hidden" id="save-submit" name="map" value="" />
+			</form>
+			<button class="button-small" onclick="map_load()">Load map</button>
+		</div>
+		
+		<button class="button-back" onclick="back()">Back to menu</button>
+		
+		<script src="tilesets.js"></script> 
+		<script src="UI_editor_script.js"></script> 
+		<script src="map_editor.js"></script> 
+		<script src="editor_server_funcs.js"></script> 
+	</body>
+</html>
